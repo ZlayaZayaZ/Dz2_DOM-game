@@ -1,5 +1,5 @@
 ---
-permalink: /index.html
+permalink: /src/docs/index.html
 ---
 
 [![Build status](https://ci.appveyor.com/api/projects/status/j3whn4wovkmd6cup?svg=true)](https://ci.appveyor.com/project/ZlayaZayaZ/dz2-dom1)
