@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 [![Build status](https://ci.appveyor.com/api/projects/status/j3whn4wovkmd6cup?svg=true)](https://ci.appveyor.com/project/ZlayaZayaZ/dz2-dom1)
 
 [ссылка на GitHub Pages](https://zlayazayaz.github.io/Dz2_DOM-game/)
@@ -30,7 +34,3 @@
 Важно: не используйте `removeChild`! Проверьте, что будет, если `Node` изменить родителя.
 
 Всё должно собираться через Webpack (включая картинки и стили) и выкладываться на Github Pages через CI.
-
----
-permalink: /index.html
----
