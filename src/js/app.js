@@ -11,7 +11,15 @@ function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min) + min); // Максимум не включается, минимум включается
-  }
+}
+
+function resetGame(message) {
+    setTimeout(() => {
+        alert(message);
+        checkYou.textContent = 0;
+        checkGoblin.textContent = 0;
+    }, 500)
+}
 
 setInterval(() => {
     let index = getRandomInt(0, cells.length);
@@ -29,16 +37,12 @@ cells.forEach(function(cell) {
         if (index == -1) {
             checkYou.textContent = Number(checkYou.textContent) + 1;
             if (Number(checkYou.textContent) == 5) {
-                alert('Вы выиграли!');
-                checkYou.textContent = 0;
-                checkGoblin.textContent = 0;
+                resetGame('Вы выиграли!')
             }
         } else {
             checkGoblin.textContent = Number(checkGoblin.textContent) + 1
             if (Number(checkGoblin.textContent) == 10) {
-                alert('Вы проиграли!');
-                checkYou.textContent = 0;
-                checkGoblin.textContent = 0;
+                resetGame('Вы проиграли!')
             }
         }
     }, false)
